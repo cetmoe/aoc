@@ -241,5 +241,6 @@ fn main() {
         let next_index = (i + 1) % n;
         sum += (points[i].x * points[next_index].y) - (points[next_index].x * points[i].y);
     }
+    
     println!("{:?}", ((sum.abs() / 2) as isize) - ((n / 2) as isize) + 1)
 }
